@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chez xXDaoudiXx</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {margin: 0;color: white;font-family: 'Segoe UI', sans-serif;}
+    #particles-js {position: absolute;width: 100%;height: 100%;background: url('wallpaperflare.com_wallpaper (1).jpg') center center / cover no-repeat;z-index: -1;}
+    .rainbow-text {
+      background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet);
+      background-clip: text;-webkit-background-clip: text;color: transparent;
+      animation: glow 8s linear infinite;background-size: 400% 400%;
+    }
+    .glow-btn {
+      background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet);
+      background-size: 400% 400%;animation: glow 5s linear infinite;color: white;
+      padding: 14px 28px;border-radius: 12px;font-size: 1.1rem;font-weight: 600;margin: 10px;
+      transition: transform 0.2s;}
+    .glow-btn:hover {transform: scale(1.05);}
+    footer {margin-top: 20px;}
+    @keyframes glow {0% {background-position: 0% 50%;}100% {background-position: 100% 50%;}}
+  </style>
+</head>
+<body class="flex flex-col min-h-screen text-center relative">
+  <div id="particles-js"></div>
+  <main class="flex flex-col flex-grow items-center justify-center p-6 relative z-10">
+    <h1 class="text-4xl font-bold mb-4">Bienvenue chez <span class="rainbow-text">xXDaoudiXx</span></h1>
+    <p class="text-gray-300 mb-6 max-w-xl">𝐋𝐨𝐠𝐢𝐜𝐢𝐞𝐥𝐬 𝐄𝐭 𝐀𝐩𝐤 𝐆𝐫𝐚𝐭𝐮𝐢𝐭</p>
+    <div class="flex flex-col sm:flex-row gap-8">
+      <div class="flex flex-col items-center">
+        <a href="logiciels.html" class="glow-btn">💻 Logiciels Windows</a>
+        <img src="images/Pc.png" alt="Windows" class="mt-4 w-40 rounded-lg shadow-lg">
+      </div>
+      <div class="flex flex-col items-center">
+        <a href="android.html" class="glow-btn">📱 Applications Android</a>
+        <img src="images/LD0006205706.png" alt="Android" class="mt-4 w-40 rounded-lg shadow-lg">
+      </div>
+    </div>
+  </main>
+  <footer class="text-center text-gray-400 text-sm py-6 border-t border-gray-700 relative z-10">
+    <p>© 2025 <span class="rainbow-text">xXDaoudiXx</span> - Tous droits réservés</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {"value":80,"density":{"enable":true,"value_area":800}},
+        "color":{"value":"#ffffff"},
+        "shape":{"type":"circle"},
+        "opacity":{"value":0.5},
+        "size":{"value":3},
+        "move":{"enable":true,"speed":3}
+      }
+    });
+  </script>
+</body>
+</html>
