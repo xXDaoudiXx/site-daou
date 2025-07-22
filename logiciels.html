@@ -1,57 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Logiciels – Chez xXDaoudiXx</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <title>Mes Logiciels</title>
   <style>
     body {
-      background-color: #0b0b0f;
+      background-color: #0a0a0a;
       color: white;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: sans-serif;
+      padding: 40px;
     }
-    .rainbow-text {
+    h1 {
+      color: #fff;
       background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet);
-      background-clip: text;
       -webkit-background-clip: text;
-      color: transparent;
-      animation: rainbowMove 8s linear infinite;
-      background-size: 400% 400%;
+      -webkit-text-fill-color: transparent;
     }
-    .btn-download {
-      background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, violet);
-      background-size: 400% 400%;
-      animation: rainbowMove 5s linear infinite;
-      color: white;
-      padding: 6px 14px;
-      border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.8rem;
-      transition: transform 0.2s;
-    }
-    .btn-download:hover {
-      transform: scale(1.05);
-    }
-    @keyframes rainbowMove {
-      0% {background-position: 0% 50%;}
-      100% {background-position: 100% 50%;}
+    a {
+      color: cyan;
     }
   </style>
 </head>
-<body class="p-4">
-  <h1 class="text-2xl font-bold text-center mb-6 rainbow-text">🌈 Mes Logiciels</h1>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
-
-    <!-- Logiciel 1 -->
-    <div class="bg-zinc-900 rounded-md p-4 shadow-md flex flex-col space-y-2">
-      <div class="flex space-x-4 items-center">
-        <img src="images/&&.png" alt="SuperClean" class="w-[200px] h-[200px] object-cover rounded">
-        <div class="flex-1">
-          <h2 class="text-lg font-semibold rainbow-text">SuperClean</h2>
-          <p class="text-sm text-gray-300 mb-2">Nettoie ton PC et booste les performances.</p>
-          <a href="files/SuperClean.exe" download class="btn-download">📥 Télécharger</a>
-        </div>
-      </div>
-      <img src="images/GIF 22-07-2025 18-00-12-preview.gif" alt="Preview SuperClean" ...>
+<body>
+  <h1>Mes Logiciels</h1>
+  <p>Voici la liste de mes logiciels à télécharger :</p>
+  <ul>
+    <li><a href="files/logiciel1.zip" download>📦 Logiciel 1</a></li>
+    <li><a href="files/logiciel2.exe" download>🛠️ Logiciel 2</a></li>
+  </ul>
+  <p><a href="index.html">⬅️ Retour à l’accueil</a></p>
+</body>
+</html>
