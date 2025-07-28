@@ -1,0 +1,32 @@
+.github/workflows/build.yml
+name: Build Windows EXE
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-win:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install pyinstaller
+
+      - name: Build EXE
+        run: pyinstaller --onefile rgb_animation.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: rgb-animation-exe
+          path: dist/rgb_animation.exe
